@@ -1,0 +1,102 @@
+/* css box model: margin -> border -> padding -> content */
+
+body {
+  background-color: rgb(38, 36, 36);
+
+  }
+  
+h1 {
+  /*background*/
+  overflow: hidden;
+  background-image: url("potential-background4.jpg");
+  background-position:bottom;
+  background-size: cover;
+  background-attachment: scroll;
+
+  /*outline*/
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+  /*border*/
+  border-style: solid;
+  border-radius: 8px; /*roundness*/
+  border-color: rgb(51, 50, 50) rgb(60, 58, 58) rgb(60, 58, 58) rgb(51, 50, 50) ; /* top right bottom left */
+  border-width: 1px;
+  padding: 40px; /*space on the inside of border */
+  margin: 10px 0px 4px 0px; /*space on outside of border */
+
+  /*text*/
+  color: rgb(239, 239, 238);
+  text-align: right;
+  /*text-transform: uppercase;  use whenever user inputs info? to autocaps? */
+  letter-spacing: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60pt;
+  font-weight:  bold;
+  text-shadow: 0 0 3px white;
+  }
+
+
+  /* user links */
+  a:link, a:visited {
+    background-color: #f7f1f1;
+    color: rgb(6, 6, 6);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    /*border*/
+    border-style: solid;
+    border-radius: 5px; /*roundness*/
+    border-color: rgb(51, 50, 50) rgb(60, 58, 58) rgb(60, 58, 58) rgb(51, 50, 50) ; /* top right bottom left */
+    border-width: 1px;
+    /*text*/
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  a:hover, a:active {
+    background-color: rgb(166, 167, 169);
+  }
+  .alignment { /*all buttons aligned on the right */
+    text-align: right;
+  }
+
+
+  /*table*/
+  table {
+    overflow-x: auto;
+    background-color: rgb(62, 62, 62);
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgb(248, 244, 244);
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    overflow: scroll;
+  }
+  th {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: monospace;
+    font-size: 30pt;
+    text-transform: uppercase;
+    color: rgb(248, 244, 244);
+    border-bottom:  1px solid rgb(248, 244, 244);
+    border-right: 1px solid rgb(248, 244, 244) ;
+  }
+  td {
+    color: rgb(248, 244, 244);
+    border-bottom:  1px solid rgb(248, 244, 244);
+    border-right: 1px solid rgb(248, 244, 244) ;
+    font-family: monospace;
+    font-size: 24pt;
+    padding: 10px 0 10px 0; 
+  }
+
+  tr:hover {background-color: rgb(39, 66, 203);}
+
+
